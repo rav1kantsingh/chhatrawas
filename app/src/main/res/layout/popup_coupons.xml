@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/pop_up_sac"
+    android:layout_width="322dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/round_corner_popup">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:layout_width="42.3dp"
+                android:layout_height="44.7dp"
+                android:id="@+id/ic_sac_app"
+                android:src="@drawable/ic_coupon"/>
+            <TextView
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="178dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_sac_app"
+                android:id="@+id/sac_2.0"
+                android:textColor="#dbdbdb"
+                android:lineSpacingExtra="4sp"
+                android:text=""
+                />
+            <TextView
+                android:layout_marginTop="16.3dp"
+                android:layout_below="@+id/sac_2.0"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="19sp"
+                android:gravity="center_horizontal"
+                android:text="Coupons Status"
+                android:id="@+id/new_dersion"
+                />
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
+               android:id="@+id/linear2"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/new_dersion"  >             android:layout_below="@id/sac_2.0">
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:id="@+id/linear1"
+                  >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="#d8d8d8"
+                       android:lineSpacingExtra="5sp"
+                       android:gravity="center_horizontal"
+                       android:id="@+id/update_line"
+                       android:text="Total Coupons:"
+                       android:layout_marginRight="5dp"
+                       />
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="#d8d8d8"
+                       android:lineSpacingExtra="5sp"
+                       android:gravity="center_horizontal"
+                       android:text="Issued Coupons:"
+                       android:layout_marginRight="5dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="#d8d8d8"
+                       android:lineSpacingExtra="5sp"
+                       android:gravity="center_horizontal"
+                       android:text="Remaining Coupons:"
+                       android:layout_marginRight="5dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="#d8d8d8"
+                       android:lineSpacingExtra="5sp"
+                       android:gravity="center_horizontal"
+                       android:text="Remaining Balance:"
+                       android:layout_marginRight="5dp"
+                       />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="#d8d8d8"
+                       android:lineSpacingExtra="5sp"
+                       android:gravity="center_horizontal"
+                       android:id="@+id/total_coupons"
+                       android:text="14"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="#d8d8d8"
+                       android:lineSpacingExtra="5sp"
+                       android:gravity="center_horizontal"
+                       android:id="@+id/issued_coupons"
+                       android:text="5"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="#d8d8d8"
+                       android:lineSpacingExtra="5sp"
+                       android:gravity="center_horizontal"
+                       android:id="@+id/remaining_coupons"
+                       android:text="9"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="#d8d8d8"
+                       android:lineSpacingExtra="5sp"
+                       android:gravity="center_horizontal"
+                       android:id="@+id/remaining_balance"
+                       android:text="Rs. 4500"
+                       />
+               </LinearLayout>
+           </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/okButton_coupon_dialog"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/linear2"
+                android:background="@drawable/round_corner_button"
+                android:text="OK"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

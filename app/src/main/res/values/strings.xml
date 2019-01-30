@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hackathon</string>
+    <string name="string_notice">Notice</string>
+    <string name="string_mess">Mess</string>
+    <string name="string_forms">Forms</string>
+    <string name="string_payment">Payment</string>
+    <string name="string_profile">Profile</string>
+
+</resources>

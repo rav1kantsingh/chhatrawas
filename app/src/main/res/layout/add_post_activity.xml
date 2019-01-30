@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/pop_blog_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/publish_btn"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="-1dp"
+       >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+>            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/notice_profile_pic"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="21dp"
+                fresco:roundAsCircle="true"
+                app:placeholderImage="@drawable/user_profile" />
+
+            <TextView
+                android:id="@+id/pop_up_blog_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/notice_profile_pic"
+                android:text="Hostel Student"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/close_relative_view"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="7dp">
+
+                    <ImageView
+                        android:id="@+id/close_view"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_close_black_24dp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/write_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pop_up_blog_username"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="13sp"
+                    android:text="Write Caption"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edit_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/write_post"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/border_edittext"
+                android:gravity="start"
+                android:hint="Write here.."
+                android:inputType="textMultiLine"
+                android:lines="7"
+                android:padding="10dp"
+                android:textColor="#696969"
+                android:textSize="11sp" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/edit_post"
+    android:layout_marginTop="20dp"
+    android:id="@+id/uploadImage"
+
+
+    >
+    <TextView
+        android:id="@+id/add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="13sp"
+        android:text="Add Image(Optional)"
+        android:textColor="#000000"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/image_loader"
+        android:layout_width="326dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/add_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="11.3dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/dotted_for_pop_up_post"
+        android:src="@drawable/ic_photo_camera_black_24dp" />
+
+</RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/publish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1a8032"
+        android:lineSpacingExtra="14sp"
+        android:text="PUBLISH"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel">
+
+    <TextView
+        android:id="@+id/complain"
+        android:background="@drawable/roundcorner_sign_mail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:text="Complain"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/in_out"
+        android:background="@drawable/roundcorner_sign_mail"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="In-Out Records"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/leave"
+        android:background="@drawable/roundcorner_sign_mail"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Leave Application"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/emergency"
+        android:background="@drawable/roundcorner_sign_mail"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Emergency"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

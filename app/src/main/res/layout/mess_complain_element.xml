@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/mess_cpmplain"
+
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_registrations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="#383838"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageView
+                android:id="@+id/registrationsBack"
+                android:layout_width="wrap_content"
+                android:foregroundGravity="left"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="31sp"
+                android:text="Complaint Form"
+                />
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_registrations"
+            android:id="@+id/Relative1"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/name_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="0dp"
+                android:text="Name                       :" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/name_person"
+                android:id="@+id/name_tv"
+                android:text="Aman Raj Sundram"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative2"
+            android:layout_below="@id/Relative1"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Rollno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll No                    :"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roll_tv"
+                android:layout_toRightOf="@id/Rollno"
+                android:text="1706033"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative3"
+            android:layout_below="@id/Relative2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year                         :"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:id="@+id/year"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/year_tv"
+                android:layout_toRightOf="@id/year"
+                android:text="2 "/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative4"
+            android:layout_below="@id/Relative3"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Room No.                   :"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/branch_tv"
+                android:layout_toRightOf="@id/name"
+                android:text="Cse"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative8"
+            android:layout_below="@id/Relative4"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Contact no              :"
+                android:textStyle="bold"
+                android:id="@+id/Mobileno"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_tv"
+                android:layout_toRightOf="@id/Mobileno"
+                android:text="1234567890"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative5"
+            android:layout_below="@id/Relative8">
+
+            <TextView
+                android:id="@+id/problem_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_background_problem"
+                android:padding="5dp"
+                android:text="Problem"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/problem_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/idleft"
+                android:text="Title "/>
+            <EditText
+                android:background="@drawable/bg_round"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:hint="Write your title"
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/idleft"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:gravity="top"
+                android:background="@drawable/bg_round"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="write your problem"
+                android:lines="10"
+                android:id="@+id/problem"
+                android:layout_below="@id/title_tv"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/write_problem_tv"
+            android:layout_below="@id/Relative5">
+
+            <TextView
+                android:background="@drawable/ic_background_problem"
+                android:id="@+id/suggestion_tetview"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Suggestion" />
+            <EditText
+
+                android:gravity="top"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/write_suggestion_tv"
+
+                android:hint="write your suggestion here"
+                android:layout_below="@id/suggestion_tetview"
+                android:lines="10"
+                />
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/write_problem_tv"
+            android:layout_marginTop="20dp"
+            android:background="#1c9b4d"
+            android:id="@+id/saveBtn"
+            android:text="Submit"/>
+    </RelativeLayout>
+
+</ScrollView>

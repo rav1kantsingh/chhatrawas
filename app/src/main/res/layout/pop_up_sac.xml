@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/pop_up_sac"
+    android:layout_width="322dp"
+    android:layout_height="256dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#253237">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:text="Are you SAS Council/TCF Member?"
+                android:lineSpacingExtra="17sp"
+                android:gravity="center_horizontal"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:id="@+id/message_edittext"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Yes"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:background="#dbdbdb"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:lineSpacingExtra="10sp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginRight="39dp"
+                android:id="@+id/yes_btn"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:background="#dbdbdb"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:lineSpacingExtra="10sp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/no_btn"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

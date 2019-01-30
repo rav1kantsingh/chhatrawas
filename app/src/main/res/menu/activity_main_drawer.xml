@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:icon="@drawable/ic_blood_drop"
+            android:id="@+id/id_blood_request"
+            android:title="Blood Search Request"
+            />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:icon="@drawable/ic_first_aid"
+            android:id="@+id/id_first_aid"
+            android:title="General First Aid"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:icon="@drawable/ic_hospital1"
+            android:id="@+id/id_call_ambulance"
+            android:title="Call Ambulance"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/id_hospitals"
+            android:icon="@drawable/ic_hospital"
+            android:title="Nearby Hospital" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item
+            android:id="@+id/id_contacts"
+             android:icon="@drawable/ic_phone_book"
+            android:title="Contacts" />
+    </group>
+
+    <item
+
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_log_out"
+        android:title="Log Out" />
+
+
+
+</menu>

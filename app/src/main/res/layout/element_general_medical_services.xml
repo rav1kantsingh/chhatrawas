@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF1879D4"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atul Singh"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/username"
+                android:id="@+id/roomno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room No:-"
+                android:textColor="#fff"
+                android:layout_marginLeft="180dp"/>
+            <TextView
+                android:layout_alignParentTop="true"
+                   android:layout_toRightOf="@+id/roomno"
+                android:id="@+id/roomnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="813"
+                android:textColor="#fff"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/sufferedfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suffered From :"
+                android:layout_below="@+id/username"
+                android:textColor="#fff"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/diseasename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viral Fever"
+                android:layout_toRightOf="@+id/sufferedfrom"
+                android:textColor="#fff"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="18dp"/>
+            <TextView
+                android:id="@+id/medicinehehas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine He/She has :"
+                android:layout_below="@+id/sufferedfrom"
+                android:textColor="#fff"
+                android:layout_marginLeft="8dp" />
+            <TextView
+                android:id="@+id/medicinename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sumo Cold"
+                android:layout_below="@+id/diseasename"
+                android:textColor="#fff"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/medicinehehas"/>
+            <Button
+                android:id="@+id/seecomposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medicinehehas"
+                android:text="See the compositions of medicine"
+                android:textAllCaps="false"
+                android:backgroundTint="#ff00"
+                android:textColor="#fff"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
