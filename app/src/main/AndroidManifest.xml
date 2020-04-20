@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ravikantsingh.hackathon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Admin.Complain"></activity>
+        <activity android:name=".Admin.Leave" />
+        <activity android:name=".Admin.in_out"></activity>
+        <activity android:name=".Admin.Emergency"></activity>
+        <activity android:name=".AdminPanel">
+
+        </activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BottomNavigationActivity">
+
+        </activity>
+        <activity android:name=".HostelEntry"></activity>
+        <activity android:name=".Signin.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MessComplainsActivity" />
+        <activity android:name=".HostelComplaintActivity" />
+        <activity android:name=".Miscellinous" />
+        <activity android:name=".NewPost"></activity>
+
+        <activity android:name=".ActiveDonor" />
+        <activity android:name=".DonateBlood" />
+        <activity android:name=".PreviousRequests" />
+        <activity android:name=".RequestBlood" />
+        <activity android:name=".GeneralMedicals"></activity>
+        <activity android:name=".BloodSearchActivity" />
+        <activity android:name=".AddMedicineActivity" />
+        <activity android:name=".LeaveActivity"/>
+    </application>
+
+</manifest>

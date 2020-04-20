@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        android:background="#202020">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="36.4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="33.9dp"
+                android:layout_marginBottom="6.1dp"
+                android:textColor="#ffffff"
+                android:letterSpacing="0.1"
+                android:lineSpacingExtra="6sp"
+                android:text="HOSTEL MANAGEMENT"
+                />
+            <TextView
+                android:layout_marginLeft="33.9dp"
+                android:layout_marginBottom="30.9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textColor="#d3d3d3"
+                android:letterSpacing="0.15"
+                android:lineSpacingExtra="3sp"
+                android:text="NIT Patna"
+                />
+        </LinearLayout>
+        <!--<ImageView-->
+            <!--android:layout_marginLeft="10dp"-->
+          <!--android:layout_gravity="center"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:src="@drawable/ic_sac2"/>-->
+        <!--<TextView-->
+            <!--android:layout_marginLeft="-8dp"-->
+            <!--android:layout_marginTop="69.9dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="8sp"-->
+            <!--android:textColor="#dbdbdb"-->
+            <!--android:lineSpacingExtra="4sp"-->
+            <!--android:text="2.0"-->
+            <!--/>-->
+    </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginRight="8.5dp"
+        android:layout_width="match_parent"
+        android:background="#585858"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relative1"/>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#1d1d1d"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="18sp"
+            android:gravity="center_horizontal"
+            android:text="Mess Menu"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="14.4dp"
+            android:id="@+id/tv_menu"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:layout_below="@id/tv_menu"
+            android:id="@+id/menu_recycler_view"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="13dp"
+
+            />
+
+        <!--
+        <android.support.design.widget.TabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+         -->
+        <!--
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:layout_below="@id/tv_static_highlights"
+            android:id="@+id/highlight_viewPager_tcfHome"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp">
+
+
+        </android.support.v4.view.ViewPager>
+         -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:id="@+id/coupons_issued_linear"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/menu_recycler_view"
+            android:background="#1f96b4">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_coupon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="#e6e6e6"
+                android:layout_below="@id/hostel_complain"
+                android:text="Coupons Isssued"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/going_out_linear"
+
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/coupons_issued_linear"
+            android:background="#c1cc174a">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_traveler_with_a_suitcase"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="#e6e6e6"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tv_going_out"
+                android:layout_below="@id/hostel_complain"
+                android:text="Going Out\nSave Food"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/whats_special"
+
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/going_out_linear"
+            android:background="#c1fce00d">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_sweets"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#e6e6e6"
+                android:layout_below="@id/hostel_complain"
+                android:text="Today's Special\nIce-Cream"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

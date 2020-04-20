@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="25dp"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backbutton"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:text="Warden "/>
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="8034197395 "/>
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Mess Manager "/>
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="9013865027"/>
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:text=" Guard  "/>
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="7293727326"/>
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Police"/>
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="100 "/>
+</LinearLayout>

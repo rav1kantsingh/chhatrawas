@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/applicant_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Applicant name"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <Spinner
+        android:id="@+id/bloodgroupspinner"
+        android:layout_marginTop="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/quantity"
+        android:layout_marginTop="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+    <RelativeLayout
+        android:id="@+id/dateRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dateview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date :"
+        android:layout_marginLeft="9dp"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_toRightOf="@+id/dateview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25/01/2019"
+            android:layout_marginLeft="9dp"
+            android:textSize="20dp"
+            android:textColor="#000"/>
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timeRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dateRV"
+            android:layout_marginLeft="40dp">
+
+            <TextView
+                android:id="@+id/timeview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time :"
+                android:layout_marginLeft="9dp"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/timetext"
+                android:layout_toRightOf="@+id/timeview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:30"
+                android:layout_marginLeft="9dp"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No-"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/mobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="1234567890"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:hint="Please give us some description with full patient detail and hospital where you need "
+        android:textSize="15dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/requestbtn"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Request"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:backgroundTint="#ff0000"/>
+
+
+</LinearLayout>

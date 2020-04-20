@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mess_cpmplain"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative1"
+            >
+
+            <TextView
+                android:id="@+id/name_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="0dp"
+                android:text="Name                       :" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/name_person"
+                android:text="Aman Raj Sundram"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative2"
+            android:layout_below="@id/Relative1"
+            >
+
+            <TextView
+                android:id="@+id/Rollno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll No                     :"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Rollno"
+                android:text="1706033"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative3"
+            android:layout_below="@id/Relative2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year                         :"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:id="@+id/year"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/year"
+                android:text="2 "/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative4"
+            android:layout_below="@id/Relative3"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch                     :"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/name"
+                android:text="Cse"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Relative5"
+            android:layout_below="@id/Relative4">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Problem"
+                android:textStyle="bold"
+                android:id="@+id/problem_textview"/>
+            <EditText
+                android:gravity="top"
+                android:background="@drawable/bg_round"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:hint="write your problem"
+                android:lines="10"
+                android:id="@+id/problem"
+                android:layout_below="@id/problem_textview"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative6"
+            android:layout_below="@id/Relative5">
+
+            <TextView
+
+                android:id="@+id/suggestion_tetview"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Suggestion" />
+            <EditText
+
+                android:gravity="top"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="write your suggestion here"
+                android:layout_below="@id/suggestion_tetview"
+                android:lines="10"
+                />
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative6"
+            android:text="Submit"/>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/applicantname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Applicant Name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+
+            <TextView
+                android:id="@+id/dateview"
+                android:layout_below="@+id/applicantname"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : 26/01/2019"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_below="@+id/dateview"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descriptions"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/timeview"
+                android:layout_below="@+id/dateview"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:30"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/textdescription"
+                android:layout_below="@+id/description"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Description goes here"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/bloodgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="O+"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="#ff00"
+                android:layout_marginRight="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/textdescription">
+
+            <Button
+                android:id="@+id/responsebtn"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:backgroundTint="#ff00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Give Response"
+                android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/contactbtn"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:backgroundTint="#ff00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="Contacts"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

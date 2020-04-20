@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_registrations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="#383838"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageView
+                android:id="@+id/registrationsBack"
+                android:layout_width="wrap_content"
+                android:foregroundGravity="left"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="31sp"
+                android:text="Complaint Form"
+                />
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEAVE APPLICATION"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/tv1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To,\nThe Warden"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/tv2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brahmaputra Hostel, NIT Patna"
+            android:layout_below="@id/tv2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/tv3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:layout_below="@id/tv3"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:id="@+id/tv4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xyz name"
+            android:visibility="gone"
+            android:layout_below="@id/tv3"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/tv4"
+
+            android:id="@+id/tv5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll: "
+            android:layout_below="@id/tv4"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+
+            android:textSize="20dp"
+            android:id="@+id/tv6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rollno"
+            android:layout_below="@id/tv4"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/tv4"
+
+            android:id="@+id/tv7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Leaving: "
+            android:layout_below="@id/tv6"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/tv8"/>
+        <EditText
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="DOL"
+            android:padding="1dp"
+            android:background="#e9e9e9"
+
+            android:layout_below="@id/tv6"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/tv11"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/tv8"
+
+            android:id="@+id/tv9"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Returning: "
+            android:layout_below="@id/tv8"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/tv10"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="DOR"
+            android:background="#e9e9e9"
+
+            android:padding="1dp"
+            android:layout_below="@id/tv8"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/tv10"
+
+            android:id="@+id/tv11"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason for Leave:"
+            android:layout_below="@id/tv10"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            android:id="@+id/tv12"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reason for Leave:"
+            android:layout_below="@id/tv12"
+            android:background="#e9e9e9"
+            android:lines="5"
+            android:padding="5dp"
+            android:gravity="top"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            android:id="@+id/tv13"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address &amp; Contact of place visiting:"
+            android:layout_below="@id/tv13"
+            android:lines="2"
+            android:background="#ededed"
+            android:padding="5dp"
+            android:gravity="top"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            android:id="@+id/tvaddress"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/saveBtn"
+            android:background="#318645"
+            android:layout_below="@id/tv13"
+            android:layout_marginTop="125dp"
+            />
+    </RelativeLayout>
+
+</ScrollView>

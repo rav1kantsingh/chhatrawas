@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp">
+
+    <EditText
+        android:id="@+id/yourname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name here"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:id="@+id/roomno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Room Number"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+    <EditText
+        android:id="@+id/diseasename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Disease you suffered"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:id="@+id/medicinename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter medicine name here"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:id="@+id/brandname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company name(Optional)"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+    <EditText
+        android:id="@+id/composition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add composition"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+    <EditText
+        android:id="@+id/expirydate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry date"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"/>
+
+
+
+
+</LinearLayout>

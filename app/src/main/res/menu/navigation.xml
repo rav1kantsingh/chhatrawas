@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_notice"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/string_notice" />
+
+    <item
+        android:id="@+id/navigation_mess"
+        android:icon="@drawable/ic_mess"
+        android:title="@string/string_mess" />
+
+    <item
+        android:id="@+id/navigation_forms"
+        android:icon="@drawable/ic_form"
+        android:title="@string/string_forms" />
+
+    <item
+        android:id="@+id/navigation_payments"
+        android:icon="@drawable/ic_payment"
+        android:title="In &amp; Out" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/string_profile" />
+
+</menu>
